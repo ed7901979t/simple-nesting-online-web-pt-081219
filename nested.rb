@@ -21,6 +21,7 @@ end
 
 def alan_kay_is_known_for
 	# What combination of keys would you use to return the value of the :known_for key of :alan_kay?
+	programmer_hash[:alan_kay][:known_for]
 	
 	programmer_hash = 
  		{
@@ -35,8 +36,12 @@ def alan_kay_is_known_for
         :dennis_ritchie => {
           :known_for => "Unix",
           :languages => ["C"]
-        }
+        },
+        :yukihiro_matsumoto => {
+          :known_for => "Ruby",
+          :languages => ["LISP", "C"]
      }
+}
 end
 
 def dennis_ritchies_language
@@ -91,7 +96,7 @@ def changing_alan
           :languages => ["COBOL", "FORTRAN"]
         },
         :alan_kay => {
-          :known_for => "Object Orientation",
+          :known_for => ["Object Orientation", "GUI"]
           :languages => ["Smalltalk", "LISP"]
         },
         :dennis_ritchie => {
